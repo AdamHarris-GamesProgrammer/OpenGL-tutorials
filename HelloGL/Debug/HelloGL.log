@@ -1,0 +1,23 @@
+﻿  GLUTCallback.cpp
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.h(26,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+  OpenGL.cpp
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.h(32,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.h(26,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.h(32,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(38,90): warning C4244: 'argument': conversion from 'double' to 'GLclampf', possible loss of data
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(38,70): warning C4244: 'argument': conversion from 'double' to 'GLclampf', possible loss of data
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(38,51): warning C4244: 'argument': conversion from 'double' to 'GLclampf', possible loss of data
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(38,32): warning C4244: 'argument': conversion from 'double' to 'GLclampf', possible loss of data
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(43,68): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(43,40): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(44,68): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(44,40): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(45,68): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(45,40): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(46,68): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  Source.cpp
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(46,40): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.h(26,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Generating Code...
+C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.h(32,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+  HelloGL.vcxproj -> C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\Debug\HelloGL.exe
