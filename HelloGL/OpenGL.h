@@ -26,6 +26,14 @@ struct Camera {
 	Vector3 up;
 };
 
+struct Color {
+	GLfloat r, g, b;
+};
+
+struct Vertex {
+	GLfloat x, y, z;
+};
+
 class OpenGL
 {
 public:
@@ -36,6 +44,9 @@ public:
 	void DrawPolygon(float points[4][2]);
 	void DrawPolygon(float points[4][2], float r, float g, float b, float a);
 	void DrawTriangle(float points[3][2]);
+
+	void DrawCube();
+
 	void Update();
 
 	float squareA[4][2] = {
@@ -48,8 +59,19 @@ public:
 	void Keyboard(unsigned char key, int x, int y);
 
 private:
-	float rotation = 0.0f;
+	float rotationY = 0.0f;
+	float rotationX = 0.0f;
 
 	Camera* mCamera;
+
+	static Vertex verticies[];
+	static Color colors[];
+
+	static Vertex indexedVerticies[];
+	static Color indexedColor[];
+	static GLushort indicies[];
+
+	void DrawCubeArray();
+	void DrawIndexedCube();
 };
 
