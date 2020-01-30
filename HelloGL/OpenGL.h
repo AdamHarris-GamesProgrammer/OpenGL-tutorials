@@ -41,20 +41,8 @@ public:
 	~OpenGL();
 
 	void Display();
-	void DrawPolygon(float points[4][2]);
-	void DrawPolygon(float points[4][2], float r, float g, float b, float a);
-	void DrawTriangle(float points[3][2]);
-
-	void DrawCube();
 
 	void Update();
-
-	float squareA[4][2] = {
-		{0,0},
-		{0.25, 0},
-		{0.25, -0.25},
-		{0,-0.25}
-	};
 
 	void Keyboard(unsigned char key, int x, int y);
 
@@ -64,14 +52,10 @@ private:
 
 	Camera* mCamera;
 
-	static Vertex verticies[];
-	static Color colors[];
-
 	static Vertex indexedVerticies[];
 	static Color indexedColor[];
 	static GLushort indicies[];
 
-	void DrawCubeArray();
 	void DrawIndexedCube();
 };
 

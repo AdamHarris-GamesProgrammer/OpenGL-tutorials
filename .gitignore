@@ -32,3 +32,8 @@
 *.app
 .vs/HelloGL/v16/Browse.VC.db
 *.opendb
+*.tlog
+*.lastbuildstate
+*.ipch
+*.tlog
+*.tlog
