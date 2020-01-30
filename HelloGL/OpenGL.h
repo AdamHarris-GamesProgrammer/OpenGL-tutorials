@@ -10,10 +10,27 @@
 
 #define REFRESH_RATE 16
 
+struct Vector3 {
+	float x, y, z;
+
+	Vector3(float xValue = 0.0f, float yValue = 0.0f, float  zValue = 0.0f) {
+		x = xValue;
+		y = yValue;
+		z = zValue;
+	}
+};
+
+struct Camera {
+	Vector3 eye;
+	Vector3 center;
+	Vector3 up;
+};
+
 class OpenGL
 {
 public:
 	OpenGL(int argc, char* argv[]);
+	~OpenGL();
 
 	void Display();
 	void DrawPolygon(float points[4][2]);
@@ -28,11 +45,11 @@ public:
 		{0,-0.25}
 	};
 
-	double backgroundColor[4];
-
 	void Keyboard(unsigned char key, int x, int y);
 
 private:
 	float rotation = 0.0f;
+
+	Camera* mCamera;
 };
 

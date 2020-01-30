@@ -1,6 +1,2 @@
 ﻿  OpenGL.cpp
-C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(39,90): warning C4244: 'argument': conversion from 'double' to 'GLclampf', possible loss of data
-C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(39,70): warning C4244: 'argument': conversion from 'double' to 'GLclampf', possible loss of data
-C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(39,51): warning C4244: 'argument': conversion from 'double' to 'GLclampf', possible loss of data
-C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(39,32): warning C4244: 'argument': conversion from 'double' to 'GLclampf', possible loss of data
   HelloGL.vcxproj -> C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\Debug\HelloGL.exe

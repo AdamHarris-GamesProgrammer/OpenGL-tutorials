@@ -9,16 +9,10 @@ OpenGL::OpenGL(int argc, char* argv[])
 {
 	rotation = 0.0f;
 
-	std::random_device rd;
-	std::mt19937 gen(rd());
-
-	srand(static_cast <unsigned> (time(0)));
-
-	backgroundColor[0] = (rand()) / static_cast <float> (RAND_MAX), static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
-	backgroundColor[1] = (rand()) / static_cast <float> (RAND_MAX), static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
-	backgroundColor[2] = (rand()) / static_cast <float> (RAND_MAX), static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
-	backgroundColor[3] = (rand()) / static_cast <float> (RAND_MAX), static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
-
+	mCamera = new Camera();
+	mCamera->eye.x = 0.0f; mCamera->eye.y = 0.0f; mCamera->eye.z = 1.0f;
+	mCamera->center.x = 0.0f; mCamera->center.y = 0.0f; mCamera->center.z = 0.0f;
+	mCamera->up.x = 0.0f; mCamera->up.y = 1.0f; mCamera->up.z = 0.0f;
 
 	GLUTCallback::Init(this);
 	glutInit(&argc, argv);
@@ -29,18 +23,33 @@ OpenGL::OpenGL(int argc, char* argv[])
 	glutDisplayFunc(GLUTCallback::Display);
 	glutTimerFunc(REFRESH_RATE, GLUTCallback::Timer, REFRESH_RATE);
 	glutKeyboardFunc(GLUTCallback::Keyboard);
+
+	glMatrixMode(GL_PROJECTION);
+
+	glViewport(0, 0, 800, 800);
+	gluPerspective(45, 1, 0, 1000);
+
+	glMatrixMode(GL_MODELVIEW);
+
 	glutMainLoop();
+}
+
+OpenGL::~OpenGL()
+{
+	delete mCamera;
 }
 
 void OpenGL::Display()
 {
 	glClear(GL_COLOR_BUFFER_BIT);
 	
-	glClearColor(backgroundColor[0],backgroundColor[1],backgroundColor[2], backgroundColor[3]);
-	
 	glPushMatrix();
-	glRotatef(rotation, 0.0f, 0.0f, -1.0f);
-	DrawPolygon(squareA);
+	glRotatef(rotation, 0.0f, -1.0f, 0.0f);
+	/*DrawPolygon(squareA);*/
+
+	glutWireCube(1.3);
+
+
 	glPopMatrix();
 	glFlush();
 	glutSwapBuffers();
@@ -87,6 +96,11 @@ void OpenGL::DrawTriangle(float points[3][2])
 
 void OpenGL::Update()
 {
+	glLoadIdentity();
+	gluLookAt(mCamera->eye.x, mCamera->eye.y, mCamera->eye.z, mCamera->center.x, mCamera->center.y, mCamera->center.z, mCamera->up.x, mCamera->up.y, mCamera->up.z);
+
+
+	glTranslatef(0.0f, 0.0f, -5.0f);
 	glutPostRedisplay();
 
 
@@ -106,6 +120,12 @@ void OpenGL::Keyboard(unsigned char key, int x, int y)
 	}
 	else if (key == 'a') {
 		rotation -= 0.5f;
+	}
+	else if (key == 'w') {
+		mCamera->eye.z += 0.1f;
+	}
+	else if (key == 's') {
+		mCamera->eye.z -= 0.1f;
 	}
 
 	
