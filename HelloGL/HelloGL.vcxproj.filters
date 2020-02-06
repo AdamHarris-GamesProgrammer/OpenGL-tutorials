@@ -24,6 +24,9 @@
     <ClCompile Include="GLUTCallback.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Cube.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OpenGL.h">
@@ -32,7 +35,10 @@
     <ClInclude Include="GLUTCallback.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Colors.h">
+    <ClInclude Include="Structures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,2 +1,1 @@
-﻿  OpenGL.cpp
-  HelloGL.vcxproj -> C:\Users\Adam\GitHub\OpenGL-tutorials\Debug\HelloGL.exe
+﻿LINK : fatal error LNK1168: cannot open C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\Debug\HelloGL.exe for writing

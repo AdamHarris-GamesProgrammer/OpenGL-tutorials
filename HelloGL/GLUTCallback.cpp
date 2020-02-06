@@ -18,13 +18,10 @@ namespace GLUTCallback {
 
 	void Timer(int preferredRefresh)
 	{
-		if (helloGL != nullptr) {
-			int updateTime = glutGet(GLUT_ELAPSED_TIME);
-			helloGL->Update();
+		helloGL->Update();
 
-			updateTime = glutGet(GLUT_ELAPSED_TIME) - updateTime;
-			glutTimerFunc(preferredRefresh - updateTime, GLUTCallback::Timer, preferredRefresh - updateTime);
-		}
+		glutTimerFunc(preferredRefresh, GLUTCallback::Timer, preferredRefresh);
+
 	}
 
 	void Keyboard(unsigned char key, int x, int y)

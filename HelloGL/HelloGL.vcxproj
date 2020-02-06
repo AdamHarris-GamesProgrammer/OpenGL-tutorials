@@ -123,14 +123,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cube.cpp" />
     <ClCompile Include="GLUTCallback.cpp" />
     <ClCompile Include="OpenGL.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Colors.h" />
+    <ClInclude Include="Cube.h" />
     <ClInclude Include="GLUTCallback.h" />
     <ClInclude Include="OpenGL.h" />
+    <ClInclude Include="Structures.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
