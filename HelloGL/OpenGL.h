@@ -28,6 +28,7 @@ public:
 private:
 	Camera* mCamera;
 
-	class Cube* cube[];
+	//class Cube* cube[];
+	class Cube* cubeFromFile;
 };
 

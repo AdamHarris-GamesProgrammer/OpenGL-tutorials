@@ -18,13 +18,16 @@ public:
 
 	Rotation GetRotation() { return mRotation; }
 	void SetRotation(Rotation newRotation) { mRotation = newRotation; }
+	static bool Load(const char* path);
 
 private:
-	static Vertex indexedVertices[];
-	static Color indexedColor[];
-	static GLushort indicies[];
+	static Vertex* indexedVertices;
+	static Color* indexedColor;
+	static GLushort* indicies;
 
 	static Rotation mRotation;
+
+	static int numVerticies, numColors, numIndicies;
 
 	Vector3 mPosition;
 };
