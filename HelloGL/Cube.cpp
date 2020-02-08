@@ -21,46 +21,32 @@ Cube::~Cube()
 
 void Cube::Draw()
 {
-	if (indexedVertices != nullptr && indexedColor != nullptr && indicies != nullptr) {
-		//glPushMatrix();
+	if (indexedVertices != nullptr && indexedColor != nullptr && indicies != nullptr)
+	{
+		glPushMatrix();
 
-		//glTranslatef(mPosition.x, mPosition.y, mPosition.z);
-
-		//glRotatef(mRotation.x, 1.0f, 0.0f, 0.0f);
-		//glRotatef(mRotation.y, 0.0f, 1.0f, 0.0f);
-		//glRotatef(mRotation.z, 0.0f, 0.0f, 1.0f);
-
-		//glBegin(GL_TRIANGLES);
-		//for (int i = 0; i < numVerticies; i++) {
-		//	glColor3fv(&indexedColor[indicies[i]].r);
-		//	glVertex3fv(&indexedVertices[indicies[i]].x);
-		//}
-		//glEnd();
-
-		//glPopMatrix();
-
-		glEnableClientState(GL_VERTEX_ARRAY);
-		glEnableClientState(GL_COLOR_ARRAY);
-		glVertexPointer(3, GL_FLOAT, 0, indexedVertices);
-		glColorPointer(3, GL_FLOAT, 0, indexedColor);
+		glTranslatef(mPosition.x, mPosition.y, mPosition.z);
 
 		glRotatef(mRotation.x, 1.0f, 0.0f, 0.0f);
 		glRotatef(mRotation.y, 0.0f, 1.0f, 0.0f);
 		glRotatef(mRotation.z, 0.0f, 0.0f, 1.0f);
 
-		glPushMatrix();
-		glDrawElements(GL_TRIANGLES, numVerticies, GL_UNSIGNED_SHORT, indicies);
-		glPopMatrix();
+		glBegin(GL_TRIANGLES);
+		for (int i = 0; i < 36; i++)
+		{
+			glColor3fv(&indexedColor[indicies[i]].r);
+			glVertex3fv(&indexedVertices[indicies[i]].x);
+		}
+		glEnd();
 
-		glDisableClientState(GL_COLOR_ARRAY);
-		glDisableClientState(GL_VERTEX_ARRAY);
+		glPopMatrix();
 	}
 
 }
 
 void Cube::Update()
 {
-	mRotation.x += 0.1f;
+	mRotation.x += 0.01f;
 	mRotation.y += 0.01f;
 	mRotation.z += 0.01f;
 }
