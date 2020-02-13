@@ -3,31 +3,26 @@
 #include "gl/GL.h"
 #include "gl/GLU.h"
 #include "GL/freeglut.h"
-#include "Structures.h"
 
-class Cube
+#include "Structures.h"
+#include "SceneObject.h"
+
+class Cube : public SceneObject
 {
 public:
-	Cube();
-	Cube(Vector3 position) : mPosition(position) {}
-	Cube(float xPos, float yPos, float zPos);
+	Cube(Mesh* mesh, float xPos, float yPos, float zPos);
 	~Cube();
 
-	void Draw();
-	void Update();
+	void Draw() override;
+	void Update() override;
 
 	Rotation GetRotation() { return mRotation; }
 	void SetRotation(Rotation newRotation) { mRotation = newRotation; }
-	static bool Load(const char* path);
 
 private:
-	static Vertex* indexedVertices;
-	static Color* indexedColor;
-	static GLushort* indicies;
 
 	static Rotation mRotation;
 
-	static int numVerticies, numColors, numIndicies;
 
 	Vector3 mPosition;
 };

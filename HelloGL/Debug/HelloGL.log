@@ -1,3 +1,2 @@
 ﻿  Cube.cpp
-C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Cube.cpp(92): warning C4715: 'Cube::Load': not all control paths return a value
-  HelloGL.vcxproj -> C:\Users\Adam\GitHub\OpenGL-tutorials\Debug\HelloGL.exe
+  HelloGL.vcxproj -> C:\Users\Adam\Documents\GitHub\OpenGL-tutorials\Debug\HelloGL.exe

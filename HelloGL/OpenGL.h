@@ -8,6 +8,8 @@
 
 #include "GLUTCallback.h"
 #include "Structures.h"
+#include "MeshLoader.h"
+#include "SceneObject.h"
 
 #define REFRESH_RATE 16
 
@@ -25,10 +27,14 @@ public:
 
 	void Keyboard(unsigned char key, int x, int y);
 
+	void InitOpenGL(int argc, char* argv[]);
+	void InitObjects();
+
 private:
 	Camera* mCamera;
 
-	class Cube* cube[];
-	//class Cube* cubeFromFile;
+	
+
+	SceneObject* sceneObjects[1000];
 };
 

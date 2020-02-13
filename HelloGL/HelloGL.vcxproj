@@ -125,13 +125,17 @@
   <ItemGroup>
     <ClCompile Include="Cube.cpp" />
     <ClCompile Include="GLUTCallback.cpp" />
+    <ClCompile Include="MeshLoader.cpp" />
     <ClCompile Include="OpenGL.cpp" />
+    <ClCompile Include="SceneObject.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cube.h" />
     <ClInclude Include="GLUTCallback.h" />
+    <ClInclude Include="MeshLoader.h" />
     <ClInclude Include="OpenGL.h" />
+    <ClInclude Include="SceneObject.h" />
     <ClInclude Include="Structures.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
