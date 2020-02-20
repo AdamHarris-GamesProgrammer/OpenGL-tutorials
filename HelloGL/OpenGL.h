@@ -29,11 +29,13 @@ public:
 
 	void InitOpenGL(int argc, char* argv[]);
 	void InitObjects();
+	void InitLighting();
 
 private:
 	Camera* mCamera;
 
-	
+	Vector4* mLightPosition;
+	Lighting* mLightData;
 
 	SceneObject* sceneObjects[500];
 };

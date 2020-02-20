@@ -15,6 +15,17 @@ struct Vector3 {
 	}
 };
 
+struct Vector4 {
+	float x, y, z, w;
+
+	Vector4(float xValue = 0.0f, float yValue = 0.0f, float zValue = 0.0f, float wValue = 0.0f) {
+		x = xValue;
+		y = yValue;
+		z = zValue;
+		w = wValue;
+	}
+};
+
 struct Rotation {
 	float x, y, z;
 
@@ -45,9 +56,24 @@ struct TexCoord {
 
 struct Mesh {
 	Vertex* Vertices;
-	Color* Colors;
+	Vector3* Normal;
+
 	GLushort* Indicies;
 
 	TexCoord* TexCoords;
-	int VertexCount, ColorCount, IndexCount, TexCoordCount;
+	int VertexCount, NormalCount, IndexCount, TexCoordCount;
+};
+
+struct Lighting {
+	Vector4 Ambient;
+	Vector4 Diffuse;
+	Vector4 Specular;
+};
+
+struct Material {
+	Vector4 Ambient;
+	Vector4 Diffuse;
+	Vector4 Specular;
+
+	GLfloat Shininess;
 };

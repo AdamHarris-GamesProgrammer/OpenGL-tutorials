@@ -30,13 +30,15 @@ namespace MeshLoader
 
 	void LoadColours(ifstream& inFile, Mesh& mesh)
 	{
-		inFile >> mesh.ColorCount;
-		mesh.Colors = new Color[mesh.ColorCount];
-		for (int i = 0; i < mesh.ColorCount; i++) {
-			inFile >> mesh.Colors[i].r;
-			inFile >> mesh.Colors[i].g;
-			inFile >> mesh.Colors[i].b;
-		}
+		//TODO: Add in a coloured Mesh structure
+
+		//inFile >> mesh.ColorCount;
+		//mesh.Colors = new Color[mesh.ColorCount];
+		//for (int i = 0; i < mesh.ColorCount; i++) {
+		//	inFile >> mesh.Colors[i].r;
+		//	inFile >> mesh.Colors[i].g;
+		//	inFile >> mesh.Colors[i].b;
+		//}
 	}
 
 	void LoadTextureCoords(ifstream& inFile, Mesh& mesh) {
@@ -57,6 +59,16 @@ namespace MeshLoader
 		}
 	}
 
+	void LoadNormals(ifstream& inFile, Mesh& mesh) {
+		inFile >> mesh.NormalCount;
+		mesh.Normal = new Vector3[mesh.NormalCount];
+		for (int i = 0; i < mesh.NormalCount; i++) {
+			inFile >> mesh.Normal[i].x;
+			inFile >> mesh.Normal[i].y;
+			inFile >> mesh.Normal[i].z;
+		}
+	}
+
 	Mesh* MeshLoader::Load(const char* path)
 	{
 		Mesh* mesh = new Mesh();
@@ -73,8 +85,9 @@ namespace MeshLoader
 
 
 		LoadVertices(inFile, *mesh);
-		LoadColours(inFile, *mesh);
+		//LoadColours(inFile, *mesh);
 		LoadTextureCoords(inFile, *mesh);
+		LoadNormals(inFile, *mesh);
 		LoadIndices(inFile, *mesh);
 
 		inFile.close();
