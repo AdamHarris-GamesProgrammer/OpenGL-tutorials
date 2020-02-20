@@ -129,6 +129,7 @@
     <ClCompile Include="OpenGL.cpp" />
     <ClCompile Include="SceneObject.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Texture2D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cube.h" />
@@ -137,6 +138,7 @@
     <ClInclude Include="OpenGL.h" />
     <ClInclude Include="SceneObject.h" />
     <ClInclude Include="Structures.h" />
+    <ClInclude Include="Texture2D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

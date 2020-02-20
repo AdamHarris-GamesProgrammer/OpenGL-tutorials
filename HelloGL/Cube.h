@@ -6,11 +6,12 @@
 
 #include "Structures.h"
 #include "SceneObject.h"
+#include "Texture2D.h"
 
 class Cube : public SceneObject
 {
 public:
-	Cube(Mesh* mesh, float xPos, float yPos, float zPos);
+	Cube(Mesh* mesh, Texture2D* texutre,  float xPos, float yPos, float zPos);
 	~Cube();
 
 	void Draw() override;

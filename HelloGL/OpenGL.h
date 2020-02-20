@@ -35,6 +35,6 @@ private:
 
 	
 
-	SceneObject* sceneObjects[1000];
+	SceneObject* sceneObjects[500];
 };
 

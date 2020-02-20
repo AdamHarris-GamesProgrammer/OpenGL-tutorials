@@ -24,7 +24,7 @@ void OpenGL::Display()
 	glClear(GL_COLOR_BUFFER_BIT);
 	glClear(GL_DEPTH_BUFFER_BIT);
 
-	for (int i = 0; i < 1000; i++) {
+	for (int i = 0; i < 500; i++) {
 		sceneObjects[i]->Draw();
 	}
 
@@ -38,7 +38,7 @@ void OpenGL::Update()
 	glLoadIdentity();
 	gluLookAt(mCamera->eye.x, mCamera->eye.y, mCamera->eye.z, mCamera->center.x, mCamera->center.y, mCamera->center.z, mCamera->up.x, mCamera->up.y, mCamera->up.z);
 
-	for (int i = 0; i < 1000; i++) {
+	for (int i = 0; i < 500; i++) {
 		sceneObjects[i]->Update();
 	}
 	//cubeFromFile->Update();
@@ -64,7 +64,7 @@ void OpenGL::InitOpenGL(int argc, char* argv[])
 	glutTimerFunc(REFRESH_RATE, GLUTCallback::Timer, REFRESH_RATE);
 	glutKeyboardFunc(GLUTCallback::Keyboard);
 
-	glEnable(GL_DEPTH_TEST);
+	
 
 	glMatrixMode(GL_PROJECTION);
 
@@ -73,8 +73,8 @@ void OpenGL::InitOpenGL(int argc, char* argv[])
 
 	glMatrixMode(GL_MODELVIEW);
 
-
-
+	glEnable(GL_TEXTURE_2D);
+	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_CULL_FACE);
 
 	glCullFace(GL_BACK);
@@ -87,16 +87,13 @@ void OpenGL::InitObjects()
 	mCamera->center.x = 0.0f; mCamera->center.y = 0.0f; mCamera->center.z = 0.0f;
 	mCamera->up.x = 0.0f; mCamera->up.y = 1.0f; mCamera->up.z = 0.0f;
 
-	Mesh* cubeMesh = MeshLoader::Load("Assets/pyramid.txt");
-	Mesh* pyramidMesh = MeshLoader::Load("Assets/cube.txt");
+	Mesh* cubeMesh = MeshLoader::Load("Assets/cube.txt");
+	Texture2D* cubeTexture = new Texture2D();
+	cubeTexture->Load((char*)"Assets/Penguins.raw", 512, 512);
 
 	for (int i = 0; i < 500; i++) {
-		sceneObjects[i] = new Cube(cubeMesh, ((rand() % 400) / 10.0f) - 20.0f, ((rand() % 200) / 10.0f) - 10.0f, -(rand() % 1000) / 10.0f);
+		sceneObjects[i] = new Cube(cubeMesh, cubeTexture, ((rand() % 400) / 10.0f) - 20.0f, ((rand() % 200) / 10.0f) - 10.0f, -(rand() % 1000) / 10.0f);
 	}
 
-	for (int i = 500; i < 1000; i++) {
-		sceneObjects[i] = new Cube(pyramidMesh, ((rand() % 400) / 10.0f) - 20.0f, ((rand() % 200) / 10.0f) - 10.0f, -(rand() % 1000) / 10.0f);
-
-	}
 }
 

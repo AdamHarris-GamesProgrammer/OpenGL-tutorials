@@ -39,6 +39,15 @@ namespace MeshLoader
 		}
 	}
 
+	void LoadTextureCoords(ifstream& inFile, Mesh& mesh) {
+		inFile >> mesh.TexCoordCount;
+		mesh.TexCoords = new TexCoord[mesh.TexCoordCount];
+		for (int i = 0; i < mesh.TexCoordCount; i++) {
+			inFile >> mesh.TexCoords[i].u;
+			inFile >> mesh.TexCoords[i].v;
+		}
+	}
+
 	void LoadIndices(ifstream& inFile, Mesh& mesh)
 	{
 		inFile >> mesh.IndexCount;
@@ -58,13 +67,14 @@ namespace MeshLoader
 
 		if (!inFile.good())
 		{
-			cerr << "Can't open texture file " << path << endl;
+			cerr << "Can't open mesh file " << path << endl;
 			return nullptr;
 		}
 
 
 		LoadVertices(inFile, *mesh);
 		LoadColours(inFile, *mesh);
+		LoadTextureCoords(inFile, *mesh);
 		LoadIndices(inFile, *mesh);
 
 		inFile.close();
