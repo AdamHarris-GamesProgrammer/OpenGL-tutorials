@@ -63,7 +63,6 @@ void OpenGL::InitOpenGL(int argc, char* argv[])
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 	glutInitWindowSize(800, 800);
-	//glutInitDisplayMode(GLUT_RGB | GLUT_DEPTH);
 	glutCreateWindow("Simple OpenGL Program");
 	glutDisplayFunc(GLUTCallback::Display);
 	glutTimerFunc(REFRESH_RATE, GLUTCallback::Timer, REFRESH_RATE);
@@ -108,9 +107,9 @@ void OpenGL::InitLighting()
 {
 	mLightPosition = new Vector4(0.0f, 0.0f, 1.0f, 0.0f);
 	mLightData = new Lighting();
-	mLightData->Ambient.x = 0.2f;
-	mLightData->Ambient.y = 0.2f;
-	mLightData->Ambient.z = 0.2f;
+	mLightData->Ambient.x = 0.6f;
+	mLightData->Ambient.y = 0.6f;
+	mLightData->Ambient.z = 0.6f;
 	mLightData->Ambient.w = 1.0f;
 	mLightData->Diffuse.x = 0.8f;
 	mLightData->Diffuse.y = 0.8f;

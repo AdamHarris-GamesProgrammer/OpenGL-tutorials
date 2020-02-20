@@ -21,6 +21,7 @@ public:
 	void SetRotation(Rotation newRotation) { mRotation = newRotation; }
 
 private:
+	Material* mMaterial;
 
 	static Rotation mRotation;
 
