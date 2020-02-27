@@ -80,6 +80,7 @@ void OpenGL::InitOpenGL(int argc, char* argv[])
 	glEnable(GL_TEXTURE_2D);
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_CULL_FACE);
+	glEnable(GL_NORMAL_ARRAY);
 	glEnable(GL_LIGHTING);
 	glEnable(GL_LIGHT0);
 
@@ -107,9 +108,9 @@ void OpenGL::InitLighting()
 {
 	mLightPosition = new Vector4(0.0f, 0.0f, 1.0f, 0.0f);
 	mLightData = new Lighting();
-	mLightData->Ambient.x = 0.6f;
-	mLightData->Ambient.y = 0.6f;
-	mLightData->Ambient.z = 0.6f;
+	mLightData->Ambient.x = 0.2f;
+	mLightData->Ambient.y = 0.2f;
+	mLightData->Ambient.z = 0.2f;
 	mLightData->Ambient.w = 1.0f;
 	mLightData->Diffuse.x = 0.8f;
 	mLightData->Diffuse.y = 0.8f;

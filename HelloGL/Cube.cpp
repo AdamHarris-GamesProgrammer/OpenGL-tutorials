@@ -43,18 +43,10 @@ void Cube::Draw()
 		glBegin(GL_TRIANGLES);
 		for (int i = 0; i < mMesh->IndexCount; i++)
 		{
-			glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, &(mMaterial->Ambient.x));
-			glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, &(mMaterial->Diffuse.x));
-			glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, &(mMaterial->Specular.x));
-			glMaterialfv(GL_FRONT_AND_BACK, GL_SHININESS, &(mMaterial->Shininess));
-			//glMaterialfv(GL_LEFT, GL_AMBIENT, &(mMaterial->Ambient.x));
-			//glMaterialfv(GL_LEFT, GL_DIFFUSE, &(mMaterial->Diffuse.x));
-			//glMaterialfv(GL_LEFT, GL_SPECULAR, &(mMaterial->Specular.x));
-			//glMaterialfv(GL_LEFT, GL_SHININESS, &(mMaterial->Shininess));
-			//glMaterialfv(GL_RIGHT, GL_AMBIENT, &(mMaterial->Ambient.x));
-			//glMaterialfv(GL_RIGHT, GL_DIFFUSE, &(mMaterial->Diffuse.x));
-			//glMaterialfv(GL_RIGHT, GL_SPECULAR, &(mMaterial->Specular.x));
-			//glMaterialfv(GL_RIGHT, GL_SHININESS, &(mMaterial->Shininess));
+			glMaterialfv(GL_FRONT, GL_AMBIENT, &(mMaterial->Ambient.x));
+			glMaterialfv(GL_FRONT, GL_DIFFUSE, &(mMaterial->Diffuse.x));
+			glMaterialfv(GL_FRONT, GL_SPECULAR, &(mMaterial->Specular.x));
+			glMaterialf(GL_FRONT, GL_SHININESS, mMaterial->Shininess);
 
 			glTexCoord2fv(&mMesh->TexCoords[mMesh->Indicies[i]].u);
 			glNormal3fv(&mMesh->Normal[mMesh->Indicies[i]].x);
@@ -83,7 +75,7 @@ void Cube::Update()
 	if (mRotation.z > 360.0f) {
 		mRotation.z = 0.0f;
 	}
-
+	srand(time(0));
 	mRotation.x += (rand() % 10) / 1000.0f;
 	mRotation.y += (rand() % 10) / 1000.0f;
 	mRotation.z += (rand() % 10) / 1000.0f;
