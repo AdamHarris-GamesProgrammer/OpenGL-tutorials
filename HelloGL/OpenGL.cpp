@@ -6,6 +6,8 @@
 
 #include "Cube.h"
 
+#include "OBJ_Loader.h"
+
 OpenGL::OpenGL(int argc, char* argv[])
 {
 	srand(time(0));
@@ -93,6 +95,11 @@ void OpenGL::InitObjects()
 	mCamera->eye.x = 0.0f; mCamera->eye.y = 0.0f; mCamera->eye.z = 1.0f;
 	mCamera->center.x = 0.0f; mCamera->center.y = 0.0f; mCamera->center.z = 0.0f;
 	mCamera->up.x = 0.0f; mCamera->up.y = 1.0f; mCamera->up.z = 0.0f;
+
+	loader.LoadFile("Assets/Cube.obj");
+	
+	std::cout << loader.LoadedMeshes[0].MeshName << std::endl;
+
 
 	Mesh* cubeMesh = MeshLoader::Load("Assets/cube.txt");
 	Texture2D* cubeTexture = new Texture2D();

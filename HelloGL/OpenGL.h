@@ -5,6 +5,7 @@
 #include <gl/GLU.h>
 #include "GL\freeglut.h"
 
+#include "OBJ_Loader.h"
 
 #include "GLUTCallback.h"
 #include "Structures.h"
@@ -38,5 +39,7 @@ private:
 	Lighting* mLightData;
 
 	SceneObject* sceneObjects[500];
+
+	objl::Loader loader;
 };
 

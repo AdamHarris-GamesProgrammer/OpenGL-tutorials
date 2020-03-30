@@ -5,16 +5,6 @@
 #include <gl/GLU.h>
 #include "GL\freeglut.h"
 
-struct Vector3 {
-	float x, y, z;
-
-	Vector3(float xValue = 0.0f, float yValue = 0.0f, float  zValue = 0.0f) {
-		x = xValue;
-		y = yValue;
-		z = zValue;
-	}
-};
-
 struct Vector4 {
 	float x, y, z, w;
 
@@ -33,6 +23,15 @@ struct Rotation {
 		x = xValue;
 		y = yValue;
 		z = zValue;
+	}
+};
+
+struct Vector3 {
+	float x, y, z;
+	Vector3(float xVal = 0.0f, float yVal = 0.0f, float zVal = 0.0f) {
+		x = xVal;
+		y = yVal;
+		z = zVal;
 	}
 };
 

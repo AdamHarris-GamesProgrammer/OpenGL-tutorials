@@ -75,6 +75,7 @@ void Cube::Update()
 	if (mRotation.z > 360.0f) {
 		mRotation.z = 0.0f;
 	}
+	
 	srand(time(0));
 	mRotation.x += (rand() % 10) / 1000.0f;
 	mRotation.y += (rand() % 10) / 1000.0f;

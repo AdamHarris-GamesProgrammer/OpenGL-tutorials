@@ -1,3 +1,12 @@
 ﻿  Cube.cpp
-C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Cube.cpp(76,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  HelloGL.vcxproj -> C:\Users\Adam\GitHub\OpenGL-tutorials\Debug\HelloGL.exe
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Cube.cpp(79,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  GLUTCallback.cpp
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.h(8,10): fatal error C1083: Cannot open include file: 'OBJ_Loader.h': No such file or directory
+  MeshLoader.cpp
+  OpenGL.cpp
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.h(8,10): fatal error C1083: Cannot open include file: 'OBJ_Loader.h': No such file or directory
+  SceneObject.cpp
+  Source.cpp
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.h(8,10): fatal error C1083: Cannot open include file: 'OBJ_Loader.h': No such file or directory
+  Texture2D.cpp
+  Generating Code...

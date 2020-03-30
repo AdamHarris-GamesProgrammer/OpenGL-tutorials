@@ -1,0 +1,163 @@
+﻿  Cube.cpp
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(652,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(689,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(695,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(949,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(31,13): error C3646: 'eye': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(31,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(32,16): error C3646: 'center': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(32,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(33,12): error C3646: 'up': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(33,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,9): error C2143: syntax error: missing ';' before '*'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,17): error C2238: unexpected token(s) preceding ';'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Cube.h(29,19): error C3646: 'mPosition': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Cube.h(29,19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Cube.cpp(9,2): error C2065: 'mPosition': undeclared identifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Cube.cpp(10,2): error C2065: 'mPosition': undeclared identifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Cube.cpp(11,2): error C2065: 'mPosition': undeclared identifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Cube.cpp(27,5): error C2039: 'Normal': is not a member of 'Mesh'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(48): message : see declaration of 'Mesh'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Cube.cpp(37,16): error C2065: 'mPosition': undeclared identifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Cube.cpp(37,29): error C2065: 'mPosition': undeclared identifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Cube.cpp(37,42): error C2065: 'mPosition': undeclared identifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Cube.cpp(37,53): error C2660: 'glTranslatef': function does not take 1 arguments
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\gl\GL.h(1466,25): message : see declaration of 'glTranslatef'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Cube.cpp(52,30): error C2039: 'Normal': is not a member of 'Mesh'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(48): message : see declaration of 'Mesh'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Cube.cpp(79,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  GLUTCallback.cpp
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(652,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(689,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(695,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(949,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(31,13): error C3646: 'eye': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(31,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(32,16): error C3646: 'center': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(32,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(33,12): error C3646: 'up': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(33,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,9): error C2143: syntax error: missing ';' before '*'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,17): error C2238: unexpected token(s) preceding ';'
+  MeshLoader.cpp
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(652,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(689,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(695,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(949,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(31,13): error C3646: 'eye': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(31,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(32,16): error C3646: 'center': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(32,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(33,12): error C3646: 'up': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(33,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,9): error C2143: syntax error: missing ';' before '*'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,17): error C2238: unexpected token(s) preceding ';'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\MeshLoader.cpp(64,15): error C2039: 'Normal': is not a member of 'Mesh'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(48): message : see declaration of 'Mesh'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\MeshLoader.cpp(64,28): error C2061: syntax error: identifier 'Vector3'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\MeshLoader.cpp(66,25): error C2039: 'Normal': is not a member of 'Mesh'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(48): message : see declaration of 'Mesh'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\MeshLoader.cpp(67,25): error C2039: 'Normal': is not a member of 'Mesh'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(48): message : see declaration of 'Mesh'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\MeshLoader.cpp(68,25): error C2039: 'Normal': is not a member of 'Mesh'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(48): message : see declaration of 'Mesh'
+  OpenGL.cpp
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(652,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(689,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(695,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(949,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(31,13): error C3646: 'eye': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(31,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(32,16): error C3646: 'center': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(32,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(33,12): error C3646: 'up': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(33,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,9): error C2143: syntax error: missing ';' before '*'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,17): error C2238: unexpected token(s) preceding ';'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Cube.h(29,19): error C3646: 'mPosition': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Cube.h(29,19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(13,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(43,24): error C2039: 'eye': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(43,40): error C2039: 'eye': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(43,56): error C2039: 'eye': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(43,75): error C2039: 'center': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(43,94): error C2039: 'center': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(43,113): error C2039: 'center': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(43,128): error C2039: 'up': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(43,143): error C2039: 'up': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(43,158): error C2039: 'up': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(43,160): error C2660: 'gluLookAt': function does not take 1 arguments
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\gl\GLU.h(92,15): message : see declaration of 'gluLookAt'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(95,14): error C2039: 'eye': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(95,37): error C2039: 'eye': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(95,60): error C2039: 'eye': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(96,17): error C2039: 'center': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(96,43): error C2039: 'center': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(96,69): error C2039: 'center': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(97,13): error C2039: 'up': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(97,35): error C2039: 'up': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OpenGL.cpp(97,57): error C2039: 'up': is not a member of 'Camera'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(30): message : see declaration of 'Camera'
+  SceneObject.cpp
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(652,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(689,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(695,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(949,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(31,13): error C3646: 'eye': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(31,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(32,16): error C3646: 'center': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(32,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(33,12): error C3646: 'up': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(33,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,9): error C2143: syntax error: missing ';' before '*'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,17): error C2238: unexpected token(s) preceding ';'
+  Source.cpp
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(652,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(689,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(695,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(949,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(31,13): error C3646: 'eye': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(31,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(32,16): error C3646: 'center': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(32,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(33,12): error C3646: 'up': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(33,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,9): error C2143: syntax error: missing ';' before '*'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,17): error C2238: unexpected token(s) preceding ';'
+  Texture2D.cpp
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(652,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(689,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(695,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\OBJ_Loader.h(949,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(31,13): error C3646: 'eye': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(31,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(32,16): error C3646: 'center': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(32,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(33,12): error C3646: 'up': unknown override specifier
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(33,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,9): error C2143: syntax error: missing ';' before '*'
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Adam\GitHub\OpenGL-tutorials\HelloGL\Structures.h(50,17): error C2238: unexpected token(s) preceding ';'
